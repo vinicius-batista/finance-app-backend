@@ -1,0 +1,43 @@
+{
+  "name": "finance-app-backend",
+  "version": "1.0.0",
+  "description": "Rest API made with Adonijs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node ace test",
+    "lint": "eslint --fix --ignore-pattern dist ./; exit 0"
+  },
+  "keywords": [
+    "adonisjs",
+    "adonis-app"
+  ],
+  "author": "Vinicius Batista <viniciusbfs2012@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@adonisjs/ace": "^4.0.7",
+    "@adonisjs/auth": "^2.0.10",
+    "@adonisjs/bodyparser": "^2.0.0",
+    "@adonisjs/cors": "^1.0.3",
+    "@adonisjs/fold": "^4.0.5",
+    "@adonisjs/framework": "^4.0.28",
+    "@adonisjs/ignitor": "^1.0.14",
+    "@adonisjs/lucid": "^4.0.24",
+    "@adonisjs/vow": "^1.0.13",
+    "moment": "^2.20.1",
+    "pg": "^7.4.1",
+    "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "autoload": {
+    "App": "./app"
+  }
+}
