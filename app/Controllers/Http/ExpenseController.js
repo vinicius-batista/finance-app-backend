@@ -45,7 +45,7 @@ class ExpenseController {
 
   async update ({ request, auth, params }) {
     const { id } = params
-    const expenseInfo = request.only(['description', 'details', 'date', 'amount', 'category'])
+    const expenseInfo = request.only(['description', 'details', 'amount', 'category'])
 
     const user = await auth.getUser()
     const expense = await Expense.find(id)
